@@ -1,6 +1,7 @@
 ## Reminders
 ###Passings variables to a template:
-* Pass a dictionary of key:values as an argument to template.render():
+
+Pass a dictionary of key:values as an argument to template.render():
 
   `template.render({"first_name": "Jay-Z"})`
 
@@ -15,17 +16,21 @@ my_variables = {"first_name": "Beyonce",
 * Pass that dictionary as an argument to template.render():
 
    `template.render(my_variables)`
+   
 
 ###Getting variables from a URL
 
-A url can pass variables through it's query string which starts after the question mark character. An ampersands (&) indicates a new variable.
+A url can pass variables through it's query string which starts after the question mark character. An ampersands (&) indicates a new variable:
 
 `http://amazon.com/home?item_name="bannana%phone"&seller_id=19`
 
-To access those variables, use the self.request.get() method
+To access those variables, use the self.request.get() method:
 
 `template_vars = {"item": self.request.get('item_name')}`
 
+You can also set a default value by adding an optional second argument, `default_value`:
+
+`self.request.get('location', default_value='Chicago')}`
 
 ## AppEngine Template Variables Mini Challenge
 ### CHALLENGE
