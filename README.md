@@ -41,3 +41,5 @@ You can also set a default value by adding an optional second argument, `default
 ### STRETCH CHALLENGE
 * Read up on detecting user's location with html [here](http://www.developerdrive.com/2012/01/using-html5-to-determine-user-location/) 
 * How could you use this browser feature and some python logic to display a different message based on where the user was located? How could you do it solely in javascript?
+
+<a href='https://learn.co/lessons/cssi-7.2-gae-template-variables-challenge' data-visibility='hidden'>View this lesson on Learn.co</a>
